@@ -1,7 +1,6 @@
 engine_config:
   max_model_len: 2048
   model: ruslanmv/Medical-Llama3-8B
-  tensor_parallel_size: 2
 extra_envs:
 - name: HF_TOKEN
 extra_labels:
@@ -12,6 +11,6 @@ service_config:
   name: llama3
   resources:
     gpu: 1
-    gpu_type: nvidia-rtx-3060
+    gpu_type: nvidia-l4
   traffic:
     timeout: 300
