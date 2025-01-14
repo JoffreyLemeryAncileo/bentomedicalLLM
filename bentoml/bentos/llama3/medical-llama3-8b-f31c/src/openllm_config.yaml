@@ -1,0 +1,17 @@
+engine_config:
+  max_model_len: 2048
+  model: ruslanmv/Medical-Llama3-8B
+  tensor_parallel_size: 2
+extra_envs:
+- name: HF_TOKEN
+extra_labels:
+  model_name: ruslanmv/Medical-Llama3-8B
+  openllm_alias: 8b,8b-medical
+project: vllm-chat
+service_config:
+  name: llama3
+  resources:
+    gpu: 1
+    gpu_type: nvidia-rtx-3060
+  traffic:
+    timeout: 300

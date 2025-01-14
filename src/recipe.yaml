@@ -1141,3 +1141,21 @@
     model_name: meta-llama/Llama-3.3-70B-Instruct
   extra_envs:
     - name: HF_TOKEN
+"ruslanmv:Medical-Llama3-8B":
+  project: vllm-chat
+  service_config:
+    name: llama3
+    traffic:
+      timeout: 300
+    resources:
+      gpu: 1
+      gpu_type: nvidia-rtx-3060
+  engine_config:
+    model: ruslanmv/Medical-Llama3-8B
+    max_model_len: 2048
+    tensor_parallel_size: 2
+  extra_labels:
+    openllm_alias: 8b,8b-medical
+    model_name: ruslanmv/Medical-Llama3-8B
+  extra_envs:
+    - name: HF_TOKEN
