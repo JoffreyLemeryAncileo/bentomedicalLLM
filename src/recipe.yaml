@@ -1155,6 +1155,7 @@
     max_model_len: 2048
     dtype: half
     tensor_parallel_size: 2
+  chat_template: llama-2-chat
   extra_labels:
     openllm_alias: 8b,8b-medical
     model_name: ruslanmv/Medical-Llama3-8B
