@@ -1153,6 +1153,7 @@
   engine_config:
     model: ruslanmv/Medical-Llama3-8B
     max_model_len: 2048
+    dtype: half
   extra_labels:
     openllm_alias: 8b,8b-medical
     model_name: ruslanmv/Medical-Llama3-8B

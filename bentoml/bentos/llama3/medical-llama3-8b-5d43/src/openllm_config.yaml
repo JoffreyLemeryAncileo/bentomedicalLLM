@@ -1,4 +1,5 @@
 engine_config:
+  dtype: half
   max_model_len: 2048
   model: ruslanmv/Medical-Llama3-8B
 extra_envs:
