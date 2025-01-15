@@ -1149,7 +1149,7 @@
       timeout: 300
     resources:
       gpu: 3
-      gpu_type: nvidia-t4
+      gpu_type: nvidia-rtx-3060
   engine_config:
     model: HPAI-BSC/Qwen2.5-Aloe-Beta-7B
     max_model_len: 2048

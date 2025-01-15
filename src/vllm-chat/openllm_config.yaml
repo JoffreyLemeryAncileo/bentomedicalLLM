@@ -25,7 +25,7 @@ project: vllm-chat
 service_config:
   name: qwen2.5
   resources:
-    gpu: 1
-    gpu_type: nvidia-T4
+    gpu: 3
+    gpu_type: nvidia-rtx-3060
   traffic:
     timeout: 300

@@ -1,0 +1,19 @@
+chat_template: chatml
+engine_config:
+  dtype: half
+  max_model_len: 2048
+  model: HPAI-BSC/Qwen2.5-Aloe-Beta-7B
+  tensor_parallel_size: 2
+extra_envs:
+- name: HF_TOKEN
+extra_labels:
+  model_name: HPAI-BSC/Qwen2.5-Aloe-Beta-7B
+  openllm_alias: 8b,8b-medical
+project: vllm-chat
+service_config:
+  name: medical
+  resources:
+    gpu: 3
+    gpu_type: nvidia-rtx-3060
+  traffic:
+    timeout: 300
