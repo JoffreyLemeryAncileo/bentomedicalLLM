@@ -1,4 +1,4 @@
-chat_template: llama-2-chat
+chat_template: chatml
 engine_config:
   dtype: half
   max_model_len: 2048
@@ -14,6 +14,6 @@ service_config:
   name: medical
   resources:
     gpu: 3
-    gpu_type: nvidia-rtx-3060
+    gpu_type: nvidia-t4
   traffic:
     timeout: 300

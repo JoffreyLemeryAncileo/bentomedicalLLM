@@ -130,6 +130,12 @@ class VLLM:
                 model=self.model_id,
                 messages=[message.model_dump()],  # type: ignore
                 stream=True,
+                max_tokens=256,           # Same as original
+                temperature=0.7,          # Same as original
+                top_p=0.8,               # Same as original
+                top_k=20,                # Added from original
+                presence_penalty=1.05,    # Using as repetition_penalty
+                stop=["<|im_end|>"]
             )
             async for chunk in completion:
                 yield chunk.choices[0].delta.content or ""

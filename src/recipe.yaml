@@ -1155,7 +1155,7 @@
     max_model_len: 2048
     dtype: half
     tensor_parallel_size: 2
-  chat_template: openchat
+  chat_template: chatml
   extra_labels:
     openllm_alias: 8b,8b-medical
     model_name: HPAI-BSC/Qwen2.5-Aloe-Beta-7B
