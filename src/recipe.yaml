@@ -1,3 +1,20 @@
+'deepseek-ai:DeepSeek-R1':
+  project: vllm-chat
+  service_config:
+    name: deepseek
+    traffic:
+      timeout: 300
+    resources:
+      gpu: 3
+      gpu_type: nvidia-rtx-3060
+  engine_config:
+    model: deepseek-ai/DeepSeek-R1
+    max_model_len: 4096
+    dtype: half
+  chat_template: chatml
+  extra_labels:
+    openllm_alias: deepseek-r1
+    model_name: deepseek-ai/DeepSeek-R1
 'phi3:3.8b-instruct-fp16':
   project: vllm-chat
   service_config:
